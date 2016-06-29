@@ -16,8 +16,8 @@ COPY app.js /usr/src/
 COPY test /usr/src/test
 COPY script /usr/src/script
 
-# user to non-privileged user
-USER nobody
+# user to privileged user
+USER root
 
 # Expose the application port and run application
 EXPOSE 5000
